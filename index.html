@@ -14,10 +14,10 @@
             margin: 0;
         }
         .logo {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
-            border: 10px solid #B0B0B0; /* Thinner ash gray stripe for elegance */
+            border: 15px solid #B0B0B0; /* Ash gray stripe with precise thickness */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,13 +25,23 @@
             background: transparent;
         }
         .logo span {
-            font-size: 50px;
+            font-size: 52px;
             font-weight: bold;
             font-family: 'Montserrat', sans-serif;
             color: #B0B0B0; /* Ash gray text */
             text-transform: uppercase;
-            transform: skew(-10deg); /* Slanted text for modern feel */
-            letter-spacing: 2px;
+            transform: skew(-10deg) scaleX(1.2); /* Slanted and slightly stretched for style */
+            letter-spacing: 3px;
+            position: relative;
+        }
+        .logo span::before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 4px;
+            background: #B0B0B0;
+            bottom: -5px;
+            left: 10%;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
